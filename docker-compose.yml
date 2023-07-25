@@ -1,0 +1,37 @@
+version: '3'
+services:
+
+  web:
+    build: ./app/
+    volumes:
+      - ./app:/code
+    ports:
+      - "${app_port}:${app_port}"
+    env_file:
+      - .env
+
+  client:
+    build: ./client/
+    volumes:
+      - ./client:/code
+    env_file:
+      - .env
+    environment:
+      - server_host=server
+    depends_on:
+      - server
+    networks:
+      - tcp
+        
+  server:
+    build: ./server/
+    volumes:
+      - ./server:/code
+    env_file:
+      - .env
+    networks:
+      - tcp
+
+networks:
+    tcp:
+        driver: bridge
