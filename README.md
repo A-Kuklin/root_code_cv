@@ -6,7 +6,7 @@
 Расположение сущностей из задания:<br>
 • Веб-приложение — <a href = "https://github.com/A-Kuklin/root_code_cv/blob/main/app/">папка `app`</a><br>
 • Фоновая задача 1 — <a href = "https://github.com/A-Kuklin/root_code_cv/blob/main/server/">папка `server`</a><br>
-• Скрипт 1 — <a href = "https://github.com/A-Kuklin/root_code_cv/blob/main/server/">папка `server`</a><br>
+• Скрипт 1 — <a href = "https://github.com/A-Kuklin/root_code_cv/blob/main/client/">папка `client`</a><br>
 
 
 ## Запуск с помощью Docker
